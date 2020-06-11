@@ -9,6 +9,9 @@ expressApp.set("views", "./templates");
 expressApp.get("", (_req, res)=>{
 	res.render("index");
 })
+expressApp.get("/hoge", (_req, res)=>{
+	res.render("hoge");
+})
 
 expressApp.listen(3000);
 
